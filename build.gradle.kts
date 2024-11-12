@@ -18,12 +18,15 @@ repositories {
 }
 
 dependencies {
+	implementation("com.squareup.okhttp3:okhttp:4.11.0")
+
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("io.github.wimdeblauwe:htmx-spring-boot:3.5.0")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
+
 
 tasks.withType<Test> {
 	useJUnitPlatform()
