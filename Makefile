@@ -3,6 +3,7 @@
 # define compiler and compiler flag variables
 JFLAGS = -g
 JC = javac
+ME = $(whoami)
 
 .java.class:
         $(JC) $(JFLAGS) $*.java
